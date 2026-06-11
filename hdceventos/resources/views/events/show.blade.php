@@ -17,11 +17,9 @@
         @if(!$hasUserJoined)
         @csrf
         <form action="/events/join/{{ $event->id }}" method="POST">
-            <button type="submit" class="btn btn-primary">Confirmar Presença</button><form action="/events/join/{{ $event->id }}" method="POST">
+            
             @csrf
-            <button type="submit" class="btn btn-primary" id="event-submit">
-                Confirmar Presença
-            </button>
+            <button type="submit" class="btn btn-primary">Confirmar Presença</button><form action="/events/join/{{ $event->id }}" method="POST">
         </form>
         @else
          <p class="already-joined-msg">Você já confirmou sua presença neste evento.</p>

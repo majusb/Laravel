@@ -16,11 +16,9 @@
         <?php if(\Livewire\Mechanisms\ExtendBlade\ExtendBlade::isRenderingLivewireComponent()): ?><!--[if BLOCK]><![endif]--><?php endif; ?><?php if(!$hasUserJoined): ?>
         <?php echo csrf_field(); ?>
         <form action="/events/join/<?php echo e($event->id); ?>" method="POST">
-            <button type="submit" class="btn btn-primary">Confirmar Presença</button><form action="/events/join/<?php echo e($event->id); ?>" method="POST">
+            
             <?php echo csrf_field(); ?>
-            <button type="submit" class="btn btn-primary" id="event-submit">
-                Confirmar Presença
-            </button>
+            <button type="submit" class="btn btn-primary">Confirmar Presença</button><form action="/events/join/<?php echo e($event->id); ?>" method="POST">
         </form>
         <?php else: ?>
          <p class="already-joined-msg">Você já confirmou sua presença neste evento.</p>

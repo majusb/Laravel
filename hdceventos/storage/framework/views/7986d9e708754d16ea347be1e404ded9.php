@@ -60,7 +60,8 @@
                 <td><a href="/events/<?php echo e($event->id); ?>"><?php echo e($event->title); ?></a></td>
                 <td><?php echo e(count($event->users)); ?></td>
                 <td>
-                    <form action="/events/leave/<?php echo e($event->id); ?>" method="POST">
+                    <form action="/events/leave/<?php echo e($event->id); ?>" method="POST"
+                     onsubmit="return confirm('Tem certeza que deseja sair do evento?')">
                         <?php echo csrf_field(); ?>
                         <?php echo method_field('DELETE'); ?>
                         <button type="submit" class="btn btn-danger delete-btn delete-btn"><ion-icon name="trash-outline"></ion-icon> Sair do Evento</button>
