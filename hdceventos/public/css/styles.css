@@ -203,3 +203,34 @@ footer p{
 #items-list li {
     display: flex;
 }
+
+#description-container {
+    margin-top: 30px;
+}
+
+.dashboard-title-container {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.dashboard-events-container th{
+    width: 25%; 
+}
+
+.dashboard-events-container form{
+    display: inline-block;
+}
+
+.img-preview {
+    width: 100%;
+    max-height: 20px;
+}
+
+#info-container .already-joined-msg {
+    margin:15px 0;
+    color: #3250f7;
+    background-color: #afdaff;
+    border: 1px solid #3250f7;
+    padding: 10px;
+    width: 250px;
+}
